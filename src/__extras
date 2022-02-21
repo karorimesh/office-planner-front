@@ -1,0 +1,77 @@
+<PageWrapper>
+          <Routes>
+            <Route
+              path='/createOrg'
+              element={<CreateOrganization />}
+            />
+            <Route
+              path='/forgot'
+              element={<Forgot />}
+            />
+            <Route
+              path='/forgotForm'
+              element={<ForgotForm />}
+            />
+            <Route
+              path='/login'
+              element={<Login />}
+            />
+            <Route
+              path='/register'
+              element={<Register />}
+            />
+          </Routes>
+          <HeaderSection>
+            <Breadcrumb />
+            <ContentWrapper>
+              <SideNav />
+              <Routes>
+                <Route
+                  path='/home'
+                  element={<HomeCards />}
+                />
+                <Route
+                  path='/boardrooms'
+                  element={<Boardrooms />}
+                />
+                <Route
+                  path='/createRoom'
+                  element={<CreateBoardroom />}
+                />
+                <Route
+                  path='/createMeet'
+                  element={<CreateMeeting />}
+                />
+                <Route
+                  path='/createUser'
+                  element={<CreateUser />}
+                />
+                <Route
+                  path='/editBoard'
+                  element={<EditBoardroom />}
+                />
+                <Route
+                  path='/editMeet'
+                  element={<EditMeeting />}
+                />
+                <Route
+                  path='/profile'
+                  element={<EditProfile />}
+                />
+                <Route
+                  path='/editUser'
+                  element={<EditUser />}
+                />
+                <Route
+                  path='/meetings'
+                  element={<Scheduled />}
+                />
+                <Route
+                  path='/users'
+                  element={<UserManager />}
+                />
+              </Routes>
+            </ContentWrapper>
+          </HeaderSection>
+          <Footer />
+        </PageWrapper>
